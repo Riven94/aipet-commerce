@@ -1,0 +1,131 @@
+page{
+  background-color: rgb(248,249,249);
+}
+.top{
+  height: 100rpx;
+  display: flex;
+  background: #F3BE67;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title{
+  color: white;
+  margin: 30rpx auto;
+}
+.back{
+  width: 40rpx;
+  height: 40rpx;
+  rotate: 180deg;
+  margin: 20rpx;
+}
+.cart{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+.bottom{
+  bottom: 0;
+  position: fixed;
+  height: 100rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.wrap{
+  float: right;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15rpx;
+}
+.label{
+  margin-top: 30rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 6px 0px rgba(229,229,229,1);
+  overflow: auto;
+  align-items: space-between;
+  border:1px solid transparent;
+}
+.comodityWrap{
+  display: flex;
+  border-radius: 10rpx;
+  margin: 20rpx 0;
+}
+.img{
+  border-radius: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+checkbox .wx-checkbox-input{
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+.quantity{
+  border: 2rpx solid black;
+  padding: 3rpx;
+  border-radius: 10rpx;
+}
+.middle{
+  width: 200rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.name{
+  width: 160rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-bottom: 10rpx;
+}
+.price{
+  color: #EA5352;
+}
+.delete{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 170rpx;
+  margin-left: 40rpx;
+  background-color: #F3BE67;
+  border-radius: 40rpx;
+  height: 60rpx;
+  width: 130rpx;
+  font-size: 31rpx;
+}
+.pay{
+  background-color: #F3BE67;
+  color: white;
+  border-radius: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  width: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60rpx;
+}
+.count{
+  margin-top: 80rpx;
+  margin-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rpx !important;
+}

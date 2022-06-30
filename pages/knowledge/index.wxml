@@ -1,0 +1,31 @@
+<view class="container">
+<view class="top">
+  <view class="searchwrap">
+    <view class="search">
+      <icon type="search" class="searchIcon" size="18"></icon>
+      <input type="text" class="input" placeholder="搜索宠物相关知识" bindconfirm="Search"/>
+    </view>
+    <image src="{{addIcon}}" style="width: 35rpx;height: 35rpx;margin: 40rpx auto;margin-left: 20rpx;" class="add" bindtap="addArticle"></image>
+  </view>
+</view>
+<view class="middle">
+  <swiper class="activities" autoplay circular indicator-dots indicator-active-color="rgb(240, 169, 56)">
+        <swiper-item class="swiper-item" wx:for="{{activityNums}}" wx:for-index="index">
+        <image class="activityImg" src="{{activityImg[index]}}" mode="aspectFill"></image>
+        </swiper-item>
+  </swiper>
+  <view class="classes">
+    <view class="class" wx:for="{{classes}}">
+      <image class="icon" src="{{item.icon}}" data-tag='{{item.tag}}' data-text="{{item.text}}" bindtap="toType"></image>
+      <view class="name">{{item.text}}</view>
+    </view>
+  </view>
+</view>
+<view class="articles">
+  <view class="article" wx:for="{{articles}}" wx:for-item="atc" data-id="{{atc.id}}" bindtap="toDetail">
+    <view class="title atc">{{atc.title}}</view>
+    <image class="articleimg" src="{{atc.imgUrl}}" mode="aspectFill"></image>
+    <view class="desc atc">{{atc.desc}}</view>
+  </view>
+</view>
+</view>

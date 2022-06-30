@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="top">
+    <view class="title">商品评价</view>
+  </view>
+  <view class="comment-general">
+    <view class="text">商品评价（{{commentdetail.length}}）</view>
+    <!-- <view class="tabs">
+      <view wx:for="{{commenttypes}}" wx:for-index="index" class="tab {{currentIndex == index ? 'on' : ''}}" data-index="{{index}}" bindtap="change">{{item.type}}（{{item.nums}}）</view>
+    </view> -->
+  </view>
+  <view class="comment-detail">
+    <view class="comment" wx:for="{{commentdetail}}">
+      <image class="icon" src="{{item.imgUrl}}"></image>
+      <view class="middle">
+        <view class="username">{{item.nickName}}</view>
+        <view class="time">{{item.createdAt}}</view>
+      </view>
+      <view class="stars">
+        <image class="star" wx:for="{{item.level - 0}}" src="{{starIcon}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+

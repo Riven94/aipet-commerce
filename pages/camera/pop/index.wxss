@@ -1,0 +1,48 @@
+/* pages/camera/pop/index.wxss */
+@import "/template/animalcard/animalcard.wxss";
+@import "/template/ownercard/ownercard.wxss";
+   
+   .showView{
+    display: flex
+  }
+  image{
+    margin-top: 20rpx;
+    margin-left: 150rpx;
+    width:200rpx; 
+    height:200rpx;
+    background-color: lavender
+  }
+  
+  button{
+    margin: 20rpx;
+  }
+  .small{
+    width:20rpx;
+    height: 20rpx;
+  }
+
+  .photograph{
+    position:fixed;
+    height: 100rpx;
+    width: 100rpx;
+    left: 325rpx;
+    bottom: 20rpx;
+    margin: 0;
+  }
+  .message{
+    position:fixed;
+    height: 100rpx;
+    width: 100rpx;
+    left: 575rpx;
+    bottom: 20rpx;
+    margin: 0;
+  }
+  .result{
+    position:fixed;
+    height: 100rpx;
+    width: 100rpx;
+    left: 75rpx;
+    bottom: 20rpx;
+    margin: 0;
+  }
+  

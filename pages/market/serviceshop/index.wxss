@@ -1,0 +1,157 @@
+/* pages/market/shop/index.wxss */
+page{
+  height: auto;
+  background-color: rgb(248,249,249);
+}
+.top{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  background: #F3BE67;
+}
+.back{
+  width: 30rpx;
+  height: 30rpx;
+  rotate: 180deg;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.cart{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.wrap{
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.stars{
+  display: flex;
+  margin-bottom: 45rpx;
+}
+.shop{
+  display: flex;
+}
+.shopicon{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 15rpx 20rpx 30rpx;
+}
+.star{
+  width: 30rpx;
+  height: 30rpx;
+}
+.otherwrap{
+  display: flex;
+}
+.shopgeneral{
+  margin: 20rpx;
+}
+.shopname{
+  margin-bottom: 10rpx;
+}
+.type{
+  margin-right: 20rpx;
+}
+.detail{
+  width: 90%;
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  border-top: 5rpx solid #DCDCDC;
+}
+.detailwrap{
+  margin: 15rpx 0 0;
+  display: flex;
+  font-size: 27rpx;
+}
+.status{
+  margin-right: 40rpx;
+}
+.services{
+  display: flex;
+  margin: 15rpx 0;
+}
+.service{
+  margin-right: 30rpx;
+  background-color: #D2E5ED;
+  border-radius: 10rpx;
+  padding: 0 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address{
+  border-top: 5rpx solid #DCDCDC;
+  border-bottom: 10rpx solid rgb(248,249,249);
+  font-size: 27rpx;
+  width: 90%;
+  margin: 0 auto;
+}
+.accurate{
+  margin: 15rpx 0 10rpx;
+}
+.distance{
+  color: #878282;
+  margin-bottom: 10rpx;
+}
+.items{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.itemFoot{
+  margin-top: 8rpx;
+  width: 40rpx;
+  height: 5rpx;
+  border-radius: 3rpx;
+  background: linear-gradient(-90deg, rgba(51,123,255,1) 0%,rgba(216,82,255,1) 100%);
+}
+.itemwrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.off{
+  display: none;
+}
+.serviceDetail{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: inherit;
+}
+.detailwrap{
+  display: flex;
+  flex-direction: column;
+  width: 320rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+.detailImg{
+  width: 320rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+.name{
+  margin: 10rpx 0rpx 0rpx 10rpx;
+}
+.addservice{
+  top: 15rpx;
+  right: 20rpx;
+  color: white;
+  height: 60rpx;
+  width: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 169, 56);
+  border-radius: 20rpx;
+}

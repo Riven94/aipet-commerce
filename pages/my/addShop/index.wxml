@@ -1,0 +1,19 @@
+<import src="../../../template/top/index.wxml"></import>
+<import src="../../../template/addImage/index.wxml"></import>
+<template is="top"></template>
+<form catchsubmit="formSubmit">
+    <view wx:for="{{info}}">
+    <view class="section" wx:if="{{index != 2}}">
+      <view class="left">{{item}}</view>
+      <input class="input" name='{{"input"+index}}' value="{{default[index]}}" />
+    </view>
+    <view class="pickersection" wx:else>
+      <view class="left">星级</view>
+      <picker class="picker" bindchange="bindLevelChange" value="{{levelIndex}}" range="{{levels}}">
+        <text class="text" space='true' decode="true">{{levels[levelIndex]}}</text>
+      </picker>
+    </view>
+    </view>
+    <template is="addImage" data="{{images: imageList, addPhotoIcon}}"></template>
+    <button class="save" style="background-color: rgb(240,169,56);position: relative;left: 0.5px;top: 32px;border-radius: 20rpx;color: aliceblue;" formType="submit">保存</button>
+  </form>

@@ -1,0 +1,31 @@
+<!--pages/index/more/index.wxml-->
+<import src="../../../template/animalcard/animalcard.wxml"></import>
+<import src="../../../template/ownercard/ownercard.wxml"></import>
+<wxs module="m1">
+  var split = function(str){
+    str = str == undefined ? '' : str;
+    console.log(str.cplit(','));
+    return str.split(',');
+  }
+  module.exports.split = split;
+</wxs>
+<view class="container">
+  <view class="bluetop">
+    <view class="title">我的宠物</view>
+    <view class="addButton" bindtap="addPet" style="width: 140rpx;padding: 7rpx 4rpx;float: right;">添加宠物</view>
+  </view>
+  <view class="info">
+    <view class="information" wx:for="{{information}}" data-detail="{{item}}" bindtap="toEdit">
+      <view class="delete" data-id="{{item.id}}" catchtap="delete">删除</view>
+      <view class="text">品种： {{item.varieties}}</view>
+      <view class="text">姓名： {{item.name}}</view>
+      <!-- <view class="text">品种： {{item.detail}}</view> -->
+      <view class="text">颜色： {{item.color}}</view>
+      <view class="text">照片： </view>
+      <view class="imagesWrap">
+        <image class="img" src="{{item}}" wx:for="{{item.imgUrl}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="left"></view>
+</view>

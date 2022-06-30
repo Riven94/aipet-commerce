@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="top">
+    <view class="searchwrap">
+    <view class="search">
+      <icon type="search" class="searchIcon" size="18"></icon>
+      <input type="text" class="input" placeholder=" 搜索店内商品" bindconfirm="Search"/>
+    </view>
+  </view>
+  <image class="cart" src="{{cartIcon}}" bindtap="toCart"></image>
+  </view>
+  <view class="shop-detail">
+    <view class="shop-general">
+      <image class="shop-icon" src='{{shop.imgUrl}}' mode="aspectFill"></image>
+      <view class="shop-name-stars">
+        <view class="shop-name">{{shop.name}}</view>
+        <view class="stars">
+          <image class="star" wx:for="{{shop.level - 0}}" src="{{starIcon}}"></image>
+        </view>
+      </view>
+    </view>
+    <view style="display: flex;justify-content: space-between;">
+    <view class="desc" style="margin:0 15rpx">{{shop.detail}}</view>
+    <text class="addcommoditydetail" bindtap="toAddcommditydetail" style="margin:15rpx" wx:if="{{isOwner}}">添加商品</text>  <!-- 这里可以删除 -->
+   <!--  <text class="addcommoditydetail" bindtap="toAddservice" style="margin:15rpx" wx:if="{{isOwner}}">添加服务</text> -->
+    </view>
+  </view>
+  <view class="servicesItems">
+    <view class="items" >
+      <view class="wrap" wx:for="{{services}}" wx:for-index="index">
+        <view class="item" data-index="{{index}}" bindtap="change">{{item}}
+        </view>
+        <view class="itemFoot {{currentIndex == index ? '' : 'off'}}" ></view>
+      </view>
+    </view>
+  </view>
+  <view class="serviceDetail" >
+    <view class="detailwrap" wx:for="{{comodities}}" bindtap="toProduct" 
+    data-id="{{item.id}}">
+      <image class="detailImg" src="{{item.imgUrl}}" mode="aspectFill"></image>
+      <view class="name">{{item.name}}</view>
+      <view class="footwrap">
+        <view class="price">￥{{item.price}}</view>
+        <view class="quantity">{{item.quantity}}人付款了</view>
+      </view>
+  </view>
+  </view>
+</view>

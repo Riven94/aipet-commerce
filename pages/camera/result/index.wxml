@@ -1,0 +1,17 @@
+<!--pages/camera/result/index.wxml-->
+<import src="../../../template/animalcard/animalcard.wxml"></import>
+<import src="../../../template/ownercard/ownercard.wxml"></import>
+<view class="container">
+<view class="topone">
+  <view class='topTabSwiper'>
+    <view wx:for="{{tabBars}}" class='tab  {{currentData == index ? "tabBorer" : ""}}' data-index="{{index}}" bindtap="changeTab">{{item}}</view>
+  </view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+  <swiper-item wx:for="{{[0,1,2,3,4]}}">
+    <template is="animalcard" data="{{animalitem}}"></template>
+    <template is="ownercard" data="{{owneritem}}"></template>
+  </swiper-item>
+</swiper>
+</view>
+

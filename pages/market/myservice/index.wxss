@@ -1,0 +1,76 @@
+/* pages/market/myservice/index.wxss */
+page{
+  background-color: rgb(248,249,249);
+}
+.top{
+  width: 100%;
+  height: 100rpx;
+  background: #F3BE67;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  top: 20rpx;
+  left: 40rpx;
+  height: 45rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+  background-color: white;
+  width: 700rpx;
+  align-items: center;
+}
+.searchIcon{
+  position: absolute;
+  left: 40rpx;
+}
+.input{
+  width: 700rpx;
+  height: 45rpx;
+  margin-left: 60rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.order{
+  border-radius: 12rpx 12rpx 12rpx 12rpx;
+  background-color: #FFFFFF;
+  box-shadow: 0rpx 4rpx 12rpx 0rpx rgba(229,229,229,1);
+  margin: 30rpx auto;
+  width: 680rpx;
+  display: flex;
+  flex-direction: column;
+}
+.orderfoot{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.ordername{
+  margin: 10rpx 0 0 15rpx;
+}
+.orderimg{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 10%;
+  margin-left: 15rpx;
+}
+.ordermiddle{
+  margin: 5rpx 60rpx 10rpx 30rpx;
+}
+.orderright{
+  margin: 5rpx 0 10rpx 50rpx;
+}
+.status{
+  margin: 10rpx 0 40rpx 0;
+}
+.servicename{
+  margin: 10rpx 0 40rpx 0;
+}
+.else{
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+  align-items: center;
+}

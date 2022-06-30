@@ -1,0 +1,18 @@
+<import src="../../../template/top/index.wxml"></import>
+<import src="../../../template/addImage/index.wxml"></import>
+<view class="container">
+  <template is="top"></template>
+  <view class="title">发布动态</view>
+  <view class="submit" bindtap="submit">提交</view>
+  <view class="text-title">动态详情：</view>  
+       <view style="margin: 15rpx 0" >
+           <view class="line"></view>
+           <view></view>
+         <textarea class="weui-input" placeholder="请输入内容......"  maxlength="1000" bindinput="content" value="{{Content}}"></textarea>
+         <view class="line"></view>
+   </view>
+  <template is="addImage" data="{{images: imageList, addPhotoIcon}}"></template>
+  <picker class="picker" bindchange="bindTypeChange" value="{{typeIndexs}}" range="{{pulishType}}" style="margin-left: 15rpx;">
+        <view >类型:<text class="text" space='true' decode="true">&nbsp;&nbsp;&nbsp;&nbsp;{{pulishType[typeIndexs]}}</text></view>
+    </picker>
+</view>

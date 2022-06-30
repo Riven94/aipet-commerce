@@ -1,0 +1,88 @@
+/* pages/index/more/index.wxss */
+@import "../../../template/animalcard/animalcard.wxss";
+@import "../../../template/ownercard/ownercard.wxss";
+page{
+  background-color: #EFEEEE;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bluetop{
+  height: 100rpx;
+  width: 100%;
+  background: #F3BE67;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 200rpx;
+  margin-left: -100rpx;
+  display: flex;
+  justify-content: center;
+}
+.addButton{
+  margin: 30rpx;
+  background-color: rgba(240, 169, 56);
+  display: flex;
+  justify-content: center;
+  border-radius: 20rpx;
+  color: #EFEEEE;
+}
+.triangle{
+  margin-top: 9rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  float: left;
+  width: 0rpx;
+  height: 0rpx;
+  border-right: 12rpx solid white;
+  border-top: 12rpx solid transparent;
+  border-bottom: 12rpx solid transparent;
+}
+.moremessage{
+  color: white;
+  float: left;
+}
+.message{
+  width: 100%;
+  display: block;
+}
+.left{
+  background-color: #EFEEEE;
+  height: 800rpx;
+}
+.info{
+  background-color: #EFEEEE;
+}
+.images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+}
+.text{
+  margin: 20rpx 0 20rpx 20rpx;
+}
+.delete{
+  position: absolute;
+  right: 40rpx;
+  color: white;
+  background-color: red;
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  width: 80rpx;
+}

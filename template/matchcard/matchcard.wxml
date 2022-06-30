@@ -1,0 +1,9 @@
+<template name="matchcard">
+<view class="detail1">
+    <view class="information1">
+      <image class="img1" mode="aspectFill" src="{{animalitem.imgUrl[0]}}" > </image>
+      <view class="text1">姓名： {{animalitem.name}}</view>
+      <view class="text1">品种： {{animalitem.type}}</view>
+    </view>
+</view>
+</template>

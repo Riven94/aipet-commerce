@@ -1,0 +1,28 @@
+<import src="../../../template/top/index.wxml"></import>
+<view class="container">
+  <template is="top"></template>
+  <view class="title">修改信息</view>
+  <view class="image" wx:if="{{icon}}" bindtap="uploadImage">
+    <image class="image" src="{{icon}}" mode="aspectFill" bindtap="uploadImage"></image>
+  </view>
+  <image class="image" wx:else bindtap="uploadImage">
+      <view class="tip">点击上传头像</view>
+  </image>
+  <form catchsubmit="formSubmit">
+    <view class="section" wx:for="{{info}}">
+      <view wx:if="{{index != 2}}" class="left">{{item}}</view>
+      <input type="{{index != 4 ? index != 5 ? 'text' : 'password' : 'password'}}" class="input" value="{{default[index]}}" wx:if="{{index != 2}}" name='{{"input"+index}}' />
+      <picker class="picker" wx:else bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="genderWrap">
+          <view class="left">性别:</view>
+          <view class="text" space='true' decode="true">{{array[arrayIndex]}}</view>
+        </view>
+      </picker>
+    </view>
+      <view wx:for="{{imageList}}">
+        <image class="normal" name="img" src="{{item}}"></image>
+      </view>
+    <button class="save" style="background-color: rgb(240,169,56);position: relative;left: 0.5px;top: 32px;border-radius: 20rpx;" type="primary" formType="submit">保存</button>
+    <button class="logout" style="background-color: rgb(240,169,56); position: relative; left: 1rpx; top: 58rpx;color: black;margin-top: 20rpx;border-radius: 20rpx;" type="warn" bindtap="logout">退出</button>
+  </form>
+</view>

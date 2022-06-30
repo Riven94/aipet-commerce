@@ -1,0 +1,22 @@
+<import src="../../../template/addImage/index.wxml"></import>
+<view class="top">
+    <view class="delete" bindtap="delete" wx:if="{{articleId}}">删除</view>
+    <view class="submit" bindtap="bindSumbit" >提交</view>
+</view>
+    <view class="title-text">文章标题：</view>
+      <view style="margin: 15rpx 0" >
+          <view class="line"></view>
+        <input placeholder="取个好听的标题把！！！" class="title" bindinput="title" value="{{articletitle}}"/>
+        <view class="line"></view>
+  </view>
+ <view class="title-text">文章内容：</view>  
+       <view style="margin: 15rpx 0" >
+           <view class="line"></view>
+           <view></view>
+         <textarea class="weui-input" placeholder="请输入内容......"  maxlength="10000" bindinput="content" value="{{Content}}"></textarea>
+         <view class="line"></view>
+   </view>
+  <template is="addImage" data="{{images: imageList, addPhotoIcon}}"></template>
+<picker class="picker" bindchange="bindTypeChange" value="{{typeIndex}}" range="{{artType}}" style="margin-left: 15rpx;">
+        <view>类型:<text space='true' decode="true" class="text">&nbsp;&nbsp;&nbsp;&nbsp;{{artType[typeIndex]}}</text></view>
+    </picker>

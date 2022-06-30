@@ -1,0 +1,107 @@
+/* pages/my/index.wxss */
+@import "../../template/publishitem/publishitem.wxss";
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  width: 100%;
+  background: #F3BE67;
+  height: 80rpx;
+}
+.add{
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  right: 20rpx;
+  top: 20rpx;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+  background-color: white;
+  width: 670rpx;
+  align-items: center;
+  height: 40rpx;
+}
+.searchIcon{
+  position: absolute;
+  left: 58rpx;
+}
+.input{
+  margin-left: 110rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  padding-left: 10rpx;
+  width: 670rpx;
+  height: 30rpx;
+}
+.swiper-wrap{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.tabs{
+  margin: 15rpx auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.clicked{
+  color: rgb(219, 122, 25);
+}
+.content{
+  width: 95%;
+  margin: 20rpx auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.animalWrap{
+  width: 100%;
+  border-radius: 15rpx;
+  box-shadow: 0px 2px 6px 0px rgba(185,185,185,1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+.left{
+  width: 48%;
+}
+.right{
+  width: 48%;
+}
+.img{
+  width: 100%;
+  border-radius: 15rpx;
+}
+.title{
+  width: 90%;
+  margin: 10rpx auto;
+  font-size: 27rpx;
+  line-height: 35rpx;
+  letter-spacing: 2rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.bigImg{
+  height: 300rpx;
+}
+.smallImg{
+  height: 200rpx;
+}
+.more{
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+}

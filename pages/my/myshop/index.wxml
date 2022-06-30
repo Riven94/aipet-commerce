@@ -1,0 +1,24 @@
+<import src="../../../template/top/index.wxml"></import>
+<view class="container">
+  <template is="top">
+  </template>
+  <view class="delete" bindtap="delete" wx:if="{{shopData.length > 0}}">删除</view>
+  <view class="addShop" bindtap="toAddShop">添加商铺</view>
+    <view class="title">我的商铺</view>
+    <checkbox-group class="myShops" bindchange="checkboxChange">
+    <label class="label" wx:for="{{shopData}}">
+        <checkbox value="{{item.id}}" checked="{{item.checked}}"/>
+        <view class="shops" catchtap="toShop" data-id="{{item.id}}">
+          <image class="shopIcon" src="{{item.imgUrl}}" mode="aspectFill"></image>
+          <view class="shopName">{{item.name}}</view>
+        </view>
+        <view class="edit" catchtap="toEdit" data-detail="{{item}}">修改</view>
+    </label>
+    </checkbox-group>
+  <!-- <view class="shops">
+    <view class="shop" wx:for="{{shopData}}" data-id="{{item.id}}" bindtap="toShop">
+      <image class="shopIcon" src="{{item.imgUrl}}"></image>
+      <view class="shopName">{{item.name}}</view>
+    </view>
+  </view> -->
+</view>

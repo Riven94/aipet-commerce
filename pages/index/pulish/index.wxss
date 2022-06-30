@@ -1,0 +1,44 @@
+@import '../../../template/top/index.wxss';
+@import '../../../template/addImage/index.wxss';
+.title{
+  color: white;
+  top: 20rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 43%;
+  position: absolute;
+}
+.text-title{
+  margin: 0 auto;
+  width: 95%;
+}
+.submit{
+  width: 80rpx;
+  padding: 10rpx 13rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  position: absolute;
+  color: white;
+  background-color: rgb(255, 166, 0);
+  right: 20rpx;
+  top: 20rpx;
+}
+
+.text::after{
+  position: absolute;
+  content: '';
+  margin: 13rpx 0 0 20rpx;
+  width: 0rpx;
+  height: 0rpx;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid gray;
+}
+.weui-input{
+  width: 95%;
+  margin: 0 auto;
+}
